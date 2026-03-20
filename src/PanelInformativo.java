@@ -8,6 +8,7 @@ public class PanelInformativo extends DispositivoIoT implements ControlableRemot
 
     @Override
     public boolean conectarWifi() {
+        System.out.println("El panel " + getId() + " se a conectado al Wi-Fi correctamente.");
         return true;
     }
 

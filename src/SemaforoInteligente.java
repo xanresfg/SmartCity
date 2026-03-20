@@ -18,6 +18,7 @@ public class SemaforoInteligente extends DispositivoIoT implements Mantenible, C
 
     @Override
     public boolean conectarWifi() {
+        System.out.println("El semáforo " + getId() + " se a conectado al Wi-Fi correctamente.");
         return true;
     }
 

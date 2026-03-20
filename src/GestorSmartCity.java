@@ -98,9 +98,8 @@ public class GestorSmartCity {
                     for (DispositivoIoT cada_dispositivo : redDispositivos) {
                         if (cada_dispositivo instanceof ControlableRemotamente) {
                             ControlableRemotamente dRemoto = (ControlableRemotamente) cada_dispositivo;
-                            if (1==1) {
-                                dRemoto.reiniciarDispositivo();
-                            }
+                            dRemoto.conectarWifi();
+                            dRemoto.reiniciarDispositivo();
                         }
                     }
                     break;
